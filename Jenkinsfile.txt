@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'linux'}
+    agent {label 'windows'}
     stages {
         stage('build'){
             steps{
@@ -9,7 +9,7 @@ pipeline {
         stage('test'){
             steps {
             
-                bat 'C:\\project\\HRLITE\\run.bat'
+                bat 'run'
 
             }
             post {
