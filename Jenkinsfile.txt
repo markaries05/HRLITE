@@ -12,25 +12,7 @@ pipeline {
                 bat 'run'
 
             }
-            post {
-               
-                    always{
-                          
-                                 dir('C:\\project\\HRLITE\\Test_cases'){
-
-                                    allure([
-                                        includeProperties : false,
-                                        jdk: '',
-                                        properties: [],
-                                        reportBuildPolicy: 'ALWAYS',
-                                        results: [[path:'Test_cases/allure-results']]
-                                        ])
-                                 }
-                            
-                    }
-                    
-                
-            }
+           
           
         }
         
