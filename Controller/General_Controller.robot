@@ -13,7 +13,7 @@ Variables    ../Elements/Menu_Elements.yml
 
 *** Keywords ***
 Launch Browser
-    Open Browser    ${url}    ${browser3}
+    Open Browser    ${url}    ${browser1}
 
     Maximize Browser Window
     Set Browser Implicit Wait    5s
