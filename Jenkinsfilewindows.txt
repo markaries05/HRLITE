@@ -1,0 +1,26 @@
+pipeline {
+    agent {label 'laptop'}
+    stages {
+        stage('build'){
+            steps{
+                echo 'hello world'
+            }
+        }
+        stage('test'){
+            steps {
+            
+                bat 'run'
+
+            }
+           
+          
+        }
+        
+        
+        stage('deploy'){
+            steps{
+                echo 'hello world3'
+            }
+        }
+    }
+}
