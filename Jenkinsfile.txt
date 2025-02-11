@@ -9,7 +9,7 @@ pipeline {
         stage('test'){
             steps {
             
-                bat 'run'
+                sh """pabot  --processes 2 Test_cases/Home.robot
 
             }
            
