@@ -9,7 +9,7 @@ pipeline {
         stage('test'){
             steps {
             
-                sh """pabot  --processes 2 Test_cases/Home.robot
+                sh """pabot  --processes 2 Test_cases/Home.robot"""
 
             }
            
