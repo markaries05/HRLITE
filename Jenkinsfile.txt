@@ -10,6 +10,7 @@ pipeline {
             steps {
             
                 sh """pabot  --processes 2 Test_cases/Login.robot"""
+                sh """allure generate test_result/allure-results --clean -o test_result/allure-report"""
 
             }
            
